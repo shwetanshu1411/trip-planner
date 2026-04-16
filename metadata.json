@@ -1,0 +1,5 @@
+{
+  "name": "AI Trip Planner",
+  "description": "A full-stack AI-powered trip planning application that generates personalized itineraries using Gemini AI, Mapbox, and Google Places.",
+  "requestFramePermissions": ["geolocation"]
+}
