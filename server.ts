@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import { Trip } from "./src/models/Trip.ts";
+import dotenv from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,6 +14,7 @@ async function startServer() {
   const PORT = 3000;
 
   app.use(express.json());
+  dotenv.config();
 
   // MongoDB Connection
   const MONGODB_URI = process.env.MONGODB_URI;
